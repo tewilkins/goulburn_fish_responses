@@ -1,0 +1,131 @@
+---
+title: "Post-flood responses of fish species in a regulated stream can be predicted through co-occurrence and niche occupancy modeling of counterfactual hydrological states"
+author: "Thomas Wilkins, Angus Webb, Wim Bovill"
+format:
+  docx:
+    reference-doc: ../templates/template.docx
+csl: ../csl/ecology.csl
+link-citations: true
+citecolor: default
+editor: visual
+keep-md: true
+bibliography: ../references.bib
+---
+
+## Working abstract
+
+<!--# What is the study about? -->
+
+Fish species' responses to post-flood conditions are often related to their ecological niche patterns of co-occurrence with other species. In regulated streams, the timing, magnitude, and duration of floods are controlled by water management practices, which can limit the ecological benefits that floods provide to fish populations.
+
+<!--# What will you do? -->
+
+This study will use monitoring data from the Goulburn River to explore how fish species respond to flooding events in a regulated stream, with a focus on co-occurrence and niche occupancy modelling.
+
+<!--# What will you find? -->
+
+The study will use counterfactual flow data to explore how fish species might respond to hypothetical hydrological states that did not occur due to regulation.
+
+<!--# What will the findings mean? -->
+
+The findings will provide insights into how fish communities respond to flooding events in an applied management context and inform conservation strategies.
+
+<!--#  -->
+
+## Introduction
+
+<!--# What happens post-flood? -->
+
+Post-flood conditions induce a range of ecological responses in fish species, including changes in abundance, recruitment, and movement patterns. Flood events can create new habitats, increase connectivity between water bodies, and provide access to floodplains for spawning and feeding. In regulated streams, the timing, magnitude, and duration of floods are controlled by water management practices. Constructed dams and weirs reduce the frequency and severity of natural flood events, potentially limiting the ecological benefits that floods provide to fish populations [@rolls2013; @rayner2015].
+
+<!--# What does regulation do to flooding frequency and severity? -->
+
+Managed releases of environmental water in southeast Australian rivers aim to restore natural flood conditions, supporting fish recruitment and habitat availability. However, restoring whole-of-system flood conditions is not often possible [@arthington2024], and the ecological responses of fish species to these managed flows may differ from those in natural systems due to past disturbances [@gehrke1995; @cruz2020]. Thus, management of fish communities must be derived from the system that they currently inhabit, using data-driven approaches to understand how fish species respond to flooding events in regulated streams.
+
+<!--# How does regulation affect fish in general? -->
+
+### Divergent Species Responses to flooding events
+
+Flood responses are often guild-structured (i.e., species grouped by their ecological function) rather than uniform (i.e., all species responding independently of their niche) [@humphries1999fish; @stocks2021; @mallett2025; @nolan2026]. In the Macquarie River, *Maccullochella peelii* (Murray cod), *Melanotaenia fluviatilis* (rainbowfish) and *Tandanus tandanus* (eel-tailed catfish) formed one guild recruiting in a narrow thermal window under low–moderate stable discharge, while carp, bony herring and golden perch recruited with larger flow events, and smelt spanned a broad range of temperatures and discharges [@stocks2021]. In the lower River Murray, small-bodied species (carp gudgeon, *Hypseleotris* spp.) declined after flooding as submerged macrophytes were lost, while large-bodied flow-spawners (golden perch, *Macquaria ambigua*) and floodplain-recruiters (common carp, *Cyprinus carpio*) increased in abundance [@bice2014].
+
+Golden perch have previously been shown to exhibit a strong post-flood recruitment pulse. In a study by @zampatti2013, abundance rose significantly post-flood driven by flood-year and prior-year cohorts, with flexible spawning across in-channel rises and overbank flows. Post-flood population growth was also substantially driven by immigration of fish greater than a year old, rather than recruitment alone [@zampatti2021]. Murray cod showed no spawning increase in a flood year but may gain recruitment via floodplain-derived food [@king2009], and both *M. peelii* and *M. ambigua* initiate large-scale movements on flooding [@thiem2020; @harding2024].
+
+Carp and smelt have also peaked post-flood. Past studies have shown that *C. carpio* dominated post-flood catch-per-unit-effort (CPUE) in the Macquarie Marshes [@rayner2015], and invasive species greatly outnumbered native species during a managed flood [@cruz2020]. Smelt outmigrated predominantly by day during floodplain recession, and native fish dominated wetlands before drawdown but non-native young-of-year carp dominated after [@stuart2024]. Thus, these examples demonstrate a need to account for species' guild-level and species-level responses that may be shared, but not exactly identical in nature, in order to predict assemblage changes in fish communities after flooding.
+
+### Antecedent hydrology in post-flood responses
+
+Prior flows impact flood responses through habitat availability, water quality, and species' physiological condition. Antecedent low flows can lead to reduced habitat complexity and lower dissolved oxygen levels following blackwater events, which may limit the ability of certain species to exploit newly available floodplain habitats [@small2014]. Conversely, antecedent high flows may prime fish populations for rapid recruitment and dispersal during subsequent flood events [@gehrke1995; @humphries1999fish; @rolls2013]. For example, spawning by *M. ambigua* follows a period characerised by rising water levels and temperature [@king2009]. High flows are not necessarily the only driving force, and many species (such as *Hypseleotris* spp., *M. fluviatilis and Galaxias* spp.), recruit successfully during low flow periods [@humphries1999fish]. Thus, antecedent conditions may also influence the post-flood responses of fish in the Goulburn River.
+
+### Co-occurrence and niche modelling in post-flood conditions
+
+Co-occurrence is a key aspect of post-flood ecology, as it can indicate how species interact and share resources in a dynamic environment. Niche modelling can help predict how species distributions may shift in response to flooding events and environmental water management. Post flood-plain conditions may support coexistence between native and non-native species by reducing competitive exclusion [@vandersleen2023], though this has not previously been demonstrated statistically for fish in the Goulburn River.
+
+Hierarchical modelling has been used to determine fish responses in cases where data is unequal and scarce [@webb2010; @beesley2014]; such data is common in ecological monitoring. Several studies have leveraged hierarchical modelling of species' co-occurrences to understand fish community dynamics in response to flooding. For example, @wagner2020 used joint species distribution models to assess how fish communities in north America responded to local-scale stream morphology, revealing that certain species pairs exhibited strong positive co-occurrence patterns. Similarly, @mclaughlin2024 demonstrated that niche occupancy models could predict shifts in species distributions based on conditional marginal estimates. However, JSDMs have rarely been applied to flood responses.
+
+### Counterfactual modelling for management scenarios
+
+Past studies have compared regulated vs non-regulated systems to assess the ecological impacts of water management practices. Regulation effects were inferred comparatively across catchments [@gehrke1995] or from before-after comparisons [@bice2014]. This does not directly translate to a management context, as it does not account for the specific conditions and constraints of a given river system [@chee2009victorian; @poff2013]. To address this gap, I will use counterfactual flow data to explore how fish species might respond to hypothetical hydrological states that did not occur due to regulation. This approach will allow for the assessment of potential ecological outcomes under different management scenarios, providing valuable insights for decision-making.
+
+### Research Aims and Questions
+
+At current, no existing framework predicts assemblage-level post-flood responses, jointly modelling shared responses and co-occurrence, under counterfactual flow scenarios. Access to water balance data from long-term hydrological records permits counterfactual estimates of flooding events under different environmental water delivery scenarios. This allows for the exploration of how fish species might respond to hypothetical flood events that did not occur due to regulation. A model that incorporates co-occurrence and niche occupancy can provide insights into how fish communities respond to flooding events, particularly in regulated streams where environmental water delivery is actively managed and antecedent conditions are widely varied. This approach can help identify which species are likely to thrive under different management scenarios and inform conservation strategies.
+
+The Goulburn River in Victoria, Australia, is a highly regulated river that is actively managed through environmental water pulse flows to restore ecological health [@cottingham2003environmental; @webb]. This study will use monitoring data from the Goulburn River to address potential research gaps relating to fish species' post-flood responses in regulated streams. The availability of counterfactual environmental water discharge, long-term fish monitoring data, and hierarchical modelling with joint-species distribution modelling provide a unique opportunity to explore the ecological responses of fish species to flooding events in an applied management context. In particular, I will address the following research questions:
+
+1.  Do species show patterns of ecological similarity in their flood response patterns?
+
+2.  How would these patterns change under differing cases of environmental water delivery?
+
+3.  How does antecedent hydrology influence the post-flood responses of fish species in regulated streams?
+
+## Methods
+
+### Study area and dataset
+
+This study will use monitoring data collected from the Goulburn River, covering sampling years from 2017 to 2026. The Goulburn River is a highly regulated river in Victoria, Australia, with a history of environmental water management practices aimed at restoring ecological health [@cottingham2003environmental; @webb]. The dataset includes catch-per-unit-effort (CPUE) records for multiple fish species, collected through standardized sampling methods across various sites along the river.
+
+The data contains CPUE records for Australian smelt (*Retropinna* spp.), common carp (*C. carpio*), golden perch (*M. ambigua*), Murray-Darling rainbowfish (*M. fluviatilis*), and Murray cod (*M. peelii*). The dataset also includes environmental variables such as water temperature, flow rate, and antecedent hydrological conditions, which will be used as predictors in the joint species distribution models.
+
+Hydrological data is available through the Water Monitoring Information System (WMIS), and environmental water delivery data is available through the Victorian Environmental Water Holder (VEWH). Counterfactual flow data will be estimated by calculating water contributions from historical flow records and environmental water delivery scenarios, allowing for the exploration of hypothetical hydrological states that did not occur due to regulation.
+
+### Statistical methods
+
+The primary motivation for this study is to model the responses of fish species to post-flood conditions, while accounting for species' co-occurrences and/or shared responses. Species' responses are inferred by CPUE data collected from the Goulburn River. CPUE will be used as the response variable in a hierarchical modelling framework to jointly model fixed and random effects of species' responses to environmental predictors [@webb2010]. Predictor variables will include environmental variables such as daily flow discharge, water temperature, and antecedent flow discharge. These predictors will be used to model the abundance of each fish species while accounting for shared responses and co-occurrence patterns.
+
+This study will implement a Joint Species Distribution Model (JSDM) to model co-occurrences between fish species listed above. I will explore the use of two JSDMs: first is residual correlation resulting from co-occurrence [@pollock2014], which seeks to explain shared occurrence patterns not explained by predictors. The second is a spatially-explicit correlated slopes model for shared responses [@warton2015; @ovaskainen2017], which captures ecological similarity between species responding to the same predictor.
+
+A typical multi-species hierarchical model is given in @eq-sdm, where $y_{ij}$ is the abundance of species $j$ at site $i$, and $\mu_{ij}$ is the linear predictor for species $j$ at site $i$. The model includes species-specific intercepts ($\alpha_{species[j]}$), site-specific intercepts ($\alpha_{site[i]}$), and species-specific slopes for predictors $X_i$ and $Y_i$ ($\beta_{1[j]}$ and $\beta_{2[j]}$, respectively). The model can be extended to include additional predictors or random effects as needed.
+
+$$
+\begin{align} \\
+y_{ij} &\sim Poisson(p_{ij}) \\
+p_{ij} &= exp(\mu_{ij}) \\
+\mu_{ij} &= \alpha_{species[j]} + \alpha_{site[i]} + \beta_{1[j]} \cdot X_i + \beta_{2[j]} \cdot Y_i
+\end{align}
+$$ {#eq-sdm}
+
+For a JSDM with correlated slopes, the model can be extended to include a covariance structure for the species-specific slopes, allowing for the estimation of shared responses to predictors across species [@eq-beta]. For a linear predictor with $n$ predictors, this can be represented as:
+
+$$
+\begin{align} \\
+\beta_{n[j]} &\sim MVN(\mu_n, \Sigma_n) \\
+\end{align}
+$$ {#eq-beta}
+
+Where $\mu_n$ is the mean vector of slopes for each predictor across species, and $\Sigma_n$ is the covariance matrix capturing the correlation structure among species' responses to the predictor. For example with environmental coefficient $X_i$, the species-specific slopes $\beta_{1[j]}$ are drawn from a multivariate normal distribution with mean $\mu_1$ and covariance matrix $\Sigma_1$, allowing for the estimation of shared responses to the predictor across species.
+
+For a JSDM accounting for residual co-occurrence, the model can be extended to include a latent variable structure that captures the residual correlation among species *after* accounting for the effects of predictors [@eq-alpha]. This can be represented as:
+
+$$
+\begin{align} \\
+\alpha_{species[j]} &\sim MVN(0, \Sigma_j) \\
+\end{align}
+$$ {#eq-alpha}
+
+Where $\alpha_{species[j]}$ is the latent variable capturing the residual correlation among species across sites, and $\Sigma_j$ is the covariance matrix representing the residual correlation structure among species (i.e., a $j \times j$ matrix of species' correlations across all observations).
+
+### Counterfactual analysis of species' responses
+
+Counterfactual analysis will be based on the estimated model parameters from the JSDM, allowing for the prediction of species' responses under hypothetical hydrological states that did not occur due to regulation. This will involve generating counterfactual flow scenarios from historical flow records and environmental water delivery data, and using the fitted JSDM to predict species' abundances under these scenarios.
+
+## References
